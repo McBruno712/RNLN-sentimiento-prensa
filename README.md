@@ -17,12 +17,13 @@ Este proyecto implementa y compara diversas arquitecturas de redes neuronales (M
   * Regularización: Dropout y Weight Decay.
   * Optimización: Adam con tasa de aprendizaje de 0.005.
 ## Resultados Obtenidos
-```
-Modelo	Representación	Macro F1 (Dev)	  Accuracy (Test)
-MLP v1	TF-IDF	        0.52	          -
-MLP v2	Embeddings SBW	0.63	          0.76
-MLP v3	Embeddings Wiki	0.53	          -
-```
+
+| Modelo  | Representación    | Macro F1 (Dev) | Accuracy (Test) |
+|---------|-------------------|---------------:|----------------:|
+| MLP v1  | TF-IDF            | 0.52           | -               |
+| MLP v2  | Embeddings SBW    | 0.63           | 0.76            |
+| MLP v3  | Embeddings Wiki   | 0.53           | -               |
+
 El modelo final basado en Word Embeddings (SBW) demostró una capacidad superior para capturar el contexto semántico, logrando un Accuracy del 76.7% y un Macro F1 de 75.0% en datos nunca antes vistos.
 
 ## Conclusiones
